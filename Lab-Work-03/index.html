@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Lab-Work-03 by Gaëtan MERIAUX</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <script>
+        var numOfcourses = parseInt(prompt("How many courses did you finish ?", 0));
+        if (Number.isInteger(numOfcourses) != true) {
+            document.write("Invalid input!");
+        } else {
+            console.log(numOfcourses);
+            var courseMarks = new Array();
+            console.log(courseMarks);
+            for (var i = 0; i < numOfcourses; i++) {
+                var courseMark = parseInt(prompt("What is the mark of the course " + (i + 1) + " ?", 0));
+                if (Number.isInteger(courseMark) != true) {
+                    document.write("Invalid input!");
+                    break;
+                } else {
+                    courseMarks.push(courseMark);
+                }
+            }
+            console.log(courseMarks);
+            for (i = 0; i < numOfcourses; i++) {
+                document.write("The mark of the course " + (i + 1) + " is " + courseMarks[i] + "<br>");
+            }
+        }
+        var sum = 0;
+        for (var i = 0; i < courseMarks.length; i++) {
+            sum += courseMarks[i];
+        }
+        var average = sum / courseMarks.length;
+        document.write("Your final average is " + average);
+
+        if (average >= 90) {
+            document.write("<br> You got an A+");
+        } else if (average >= 80) {
+            document.write("<br> You got a B");
+        } else if (average >= 70) {
+            document.write("<br> You got a C");
+        } else if (average >= 60) {
+            document.write("<br> You got a D");
+        } else if (average < 60) {
+            document.write("<br> You got an F");
+        } else {
+            document.write("<br> Sorry, all the marks have to be from minimum 0 to maximum 100!");
+        }
+    </script>
+</body>
+
+<footer>
+    <p>Copyright © 2022 ILAC and EFREI Paris – HTML-CSS major lab-work - created by: Gaëtan MERIAUX - All rights
+        reserved </p>
+</footer>
+
+</html>
