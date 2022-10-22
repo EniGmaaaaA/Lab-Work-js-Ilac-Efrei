@@ -1,0 +1,104 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+ 
+<head> 
+    <meta charset="utf-8"> 
+    <title>Contact Us</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head> 
+ 
+<body> 
+    <div class="container"> 
+ 
+        <header> 
+            <img 
+            src = "assets/images/su_banner.gif"
+            alt = "The-Stripped-Umbrella">
+
+            <nav id="main-nav"> 
+                <ul>
+                    <li> <a href = "index.html">Home</a></li>
+                    <li> <a href = "about.html">About Us</a></li>
+                    <li> <a href = "services.html">Our Services</a></li>
+                    <li> <a href = "contact.html">Contact Us</a></li>
+                </ul>
+            </nav> 
+        </header> 
+ 
+        <main class="content"> 
+            <h2>Contact us</h2>
+            <form>
+                <fieldset>
+                    <legend>Personal Informations</legend>
+                    <label for="fname">First name :</label>
+                    <input type="text" id="fname" name="fname" required="required" maxlength="25"><br><br>
+
+                    <label for="lname">Last name :</label>
+                    <input type="text" id="lname" name="lname" required="required" maxlength="25"><br><br>
+
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" maxlength="35"><br><br>
+
+                    <input type="checkbox" id="music1" name="music1" value="Jazz">
+                    <label for="music1"> Jazz</label><br>
+
+                    <input type="checkbox" id="music2" name="music2" value="Classic">
+                    <label for="music2"> Classic</label><br>
+
+                    <input type="checkbox" id="music3" name="music3" value="Blues">
+                    <label for="music3"> Blues</label><br>
+
+                    <input type="checkbox" id="music4" name="music4" value="Instrumental">
+                    <label for="music3"> Instrumental</label><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Your Message</legend>
+
+                    <label for="choix">How did you hear about us ?</label>
+
+                    <select id="choix">
+                      <option value="website">Our website</option>
+                      <option value="friends">Friends</option>
+                      <option value="tvadv">TV Adv.</option>
+                      <option value="other">Other</option>
+                    </select><br><br>
+
+
+                    <label for="recommend">Would you recommend us to your friends ?</label><br>
+                    <input type="radio" id="oui" name="recommend" value="yes" checked>
+                    <label for="oui">Yes</label>
+
+                    <input type="radio" id="non" name="recommend" value="no">
+                    <label for="non">No</label>
+
+                    <input type="radio" id="PE" name="recommend" value="maybe">
+                    <label for="PE">Maybe</label><br><br>
+
+                    
+                    <label for="request">Your request :</label><br>
+                    <textarea id="request" name="request" rows="5" cols="33">
+                    </textarea><br><br>
+
+
+                    <input type="checkbox" id="mailinfo" name="mailinfo" checked>
+                    <label for="mailinfo">Sign me up for email updates</label> <br><br><br>
+
+
+                    <input type ="submit" id="bouton" name="bouton">
+                    <label for="bouton"></label><br><br>
+
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2885.8659971242787!2d-79.39194918450164!3d43.671756679120655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b2e0b64e1140d%3A0xd11156503e310196!2sSpa%20at%20Four%20Seasons%20Toronto!5e0!3m2!1sfr!2sca!4v1663701671271!5m2!1sfr!2sca" 
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </fieldset>
+            </form>
+        </main>
+ 
+        <footer> 
+            Copyright © 2022 ILAC and EFREI Paris – HTML-CSS major lab-work - created by: Gaëtan MERIAUX - All rights 
+            reserved 
+        </footer> 
+ 
+    </div> 
+</body> 
+</html> 
