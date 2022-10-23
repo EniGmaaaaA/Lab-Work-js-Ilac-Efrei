@@ -1,0 +1,26 @@
+body{
+    background-color: rgba(0, 217, 255, 0.63);
+}
+.element{
+    width: 70%;
+    background-color: lightblue;
+    margin: auto;
+    border-radius: 30px;
+    border-style: solid;
+}
+
+section{
+    width: 65%;
+    background-color: lightcyan;
+    border-style: solid;
+    margin: 20px auto;
+}
+
+.element, section{
+    padding:5px;
+    box-sizing: border-box;
+}
+
+.goToTop{
+    text-align: center;
+}
