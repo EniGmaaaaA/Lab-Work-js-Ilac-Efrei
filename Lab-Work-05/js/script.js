@@ -29,24 +29,36 @@ function myExcelFuns(){
 
         let calcul = document.getElementsByName("result");
         let choice;
-        console.log(choice);
         for(var j = 0; j < calcul.length; j++){
             if(calcul[j].checked){
                 choice = calcul[j].value;
             }
         }
 
+        let finalArr=[];
+        for(i=0; i<numberArr.length; i++){
+            finalArr[i] = parseInt(numberArr[i]);
+        }
+
         if (choice == "AutoSum"){
             let sum = 0;
-            console.log(sum);
-            for (let i = 0; i < numberArr.length; i++){
-                sum += parseInt(numberArr[i]);
-                console.log(sum);
+            for (let i = 0; i < finalArr.length; i++){
+                sum += finalArr[i];
             }
             document.getElementById("output").innerHTML = "Sum: " + sum;
-            console.log(sum);
+        }else if(choice == "Average"){
+            let sum = 0;
+            for (let i = 0; i < finalArr.length; i++){
+                sum += finalArr[i];
+            }
+            let avg = sum / finalArr.length;
+            document.getElementById("output").innerHTML = "Average: " + avg;
+        }else if(choice == "Max"){
+            let max = Math.max(...finalArr);
+            document.getElementById("output").innerHTML = "Max: " + max;
+        }else if(choice == "Min"){
+            let min = Math.min(...finalArr);
+            document.getElementById("output").innerHTML = "Min: " + min;
         }
-        
-        
     }
 }
