@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Excel-Page-LBW05</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../Lab-Work-05/css/styles.css">
+    </head>
+
+    <body>
+        <header> 
+            <nav>
+                <h1>Excel Functions</h1>
+                <ul> 
+                    <li><a href="index.html">Home</a></li> 
+                    <li><a href="excel.html">Excel</a></li> 
+                </ul> 
+            </nav>
+        </header>
+
+        <main> 
+            <form id="main-form" name="mainform"> 
+                <label for="number">Enter your numbers separated by spaces:</label>
+                <input type="text" id="numbers" name="numbers"><br><br>
+
+                <input type="radio" id="Autosum" name="result" value="Autosum" checked>
+                <label for="Autosum">AutoSum</label><br>
+
+                <input type="radio" id="Average" name="result" value="Average">
+                <label for="Average">Average</label><br>
+
+                <input type="radio" id="Max" name="result" value="Max">
+                <label for="Max">Max</label><br>
+
+                <input type="radio" id="Min" name="result" value="Min">
+                <label for="Min">Min</label><br><br>
+
+                <input type="submit" id="btn" value="Calculate">
+                <input type="reset" id ="btn2" value="Reset">
+            </form> 
+     
+            <div id="output"> 
+<!-- here is where the user should see the result (output) --> 
+            </div> 
+        </main> 
+
+        <footer>
+            <p>Copyright © 2022 ILAC and EFREI Paris – HTML-CSS major lab-work - created by: Gaëtan MERIAUX - All rights
+                reserved </p>
+        </footer>
+        <script src="../Lab-Work-05/js/script.js"></script>
+    </body>
+</html>

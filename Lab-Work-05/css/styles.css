@@ -1,0 +1,49 @@
+body{
+    background-color: rgba(0, 217, 255, 0.63);
+    font-family: Rockwell;
+}
+
+h1{
+    text-align: center;
+    font-family: Rockwell;
+    border-radius: 30px;
+    border-style: solid;
+    border-color: black;
+    background-color: lightblue;
+}
+
+
+#main-form{
+    text-align: left;
+    font-family: Rockwell;
+    width: 70%;
+    background-color: lightblue;
+    margin: auto;
+    padding: 15px;
+    border-radius: 30px;
+    border-style: solid;
+    border-color: black;
+}
+
+#main-form #btn{
+    font-family: Rockwell;
+    border-radius: 8px;
+    background-color: #4CAF50;
+}
+
+#main-form #btn2{
+    font-family: Rockwell;
+    border-radius: 8px;
+    background-color: #f44336;
+}
+
+#output{
+    text-align: center;
+    font-family: Rockwell;
+    border-radius: 30px;
+    border-style: solid;
+    border-color: black;
+    background-color: lightblue;
+    width: 70%;
+    margin: auto;
+}
